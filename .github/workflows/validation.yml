@@ -12,7 +12,7 @@ jobs:
   validation-staging:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: promotion/staging
@@ -30,7 +30,7 @@ jobs:
   validation-staging-old-name:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: promotion/staging
@@ -48,7 +48,7 @@ jobs:
   validation-qa:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: promotion/qa
@@ -66,7 +66,7 @@ jobs:
   validation-uat:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/20240101
@@ -84,7 +84,7 @@ jobs:
   validation-data-migration:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: staging
@@ -102,7 +102,7 @@ jobs:
   validation-perftest-preprod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/20240101
@@ -120,7 +120,7 @@ jobs:
   validation-perftest-prod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: prod
@@ -138,7 +138,7 @@ jobs:
   validation-preprod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: staging
@@ -156,7 +156,7 @@ jobs:
   validation-prod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/20230101
@@ -174,7 +174,7 @@ jobs:
   validation-prod-old-name:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/20230101
@@ -192,7 +192,7 @@ jobs:
   validation-source-validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: validation/sandbox-name
@@ -210,7 +210,7 @@ jobs:
   validation-force-deployment:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: deploy/sandbox-name
@@ -228,7 +228,7 @@ jobs:
   validation-hotfix-preprod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: hotfix/abc
@@ -246,7 +246,7 @@ jobs:
   validation-hotfix-prod:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/hotfix-20230101
@@ -265,7 +265,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: feature/abc
@@ -285,7 +285,7 @@ jobs:
   validation-check-ignore-validation-environment:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: feature/abc
@@ -306,7 +306,7 @@ jobs:
   validation-check-ignore-validation-environment-emtpy-value:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: feature/abc
@@ -328,7 +328,7 @@ jobs:
   validation-bugfix:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: fix/abc
@@ -346,7 +346,7 @@ jobs:
   validation-release-prerelease:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/20240101
@@ -364,7 +364,7 @@ jobs:
   validation-bugfix-prerelease:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: fix/abc
@@ -382,7 +382,7 @@ jobs:
   validation-hotfix-prerelease:
     runs-on: ubuntu-latest
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: release/hotfix-123
@@ -401,7 +401,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: 056-SGBDUK/ACTION-DEVOPS-Environment-Identification@master
+      - uses: KRYAYKN/ACTION-Set-Environment@main
         id: environment
         with:
           source-branch: qa
